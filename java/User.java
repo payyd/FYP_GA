@@ -6,51 +6,38 @@ import processing.core.PApplet;
 public class User
 {
     UI ui;
-    private float x1,x2,x3,y1,y2,y3;
-    private int time_wait = 50;
+    public float user_x1,user_x2,user_x3,user_y1,user_y2,user_y3;
+    private int time_wait = 35;
 
-    public User(UI ui, float x1, float y1, float x2 , float y2 ,float x3 , float y3)
+    public User(UI ui, float user_x1, float user_y1, float user_x2 , float user_y2 ,float user_x3 , float user_y3)
     {
         this.ui = ui;
-        this.x1 = x1;
-        this.y1 = y1;
-        this.x2 = x2;
-        this.y2 = y2;
-        this.x3 = x3;
-        this.y3 = y3;
+        this.user_x1 = user_x1;
+        this.user_y1 = user_y1;
+        this.user_x2 = user_x2;
+        this.user_y2 = user_y2;
+        this.user_x3 = user_x3;
+        this.user_y3 = user_y3;
 
     }
 
     public void render()
     {
         ui.fill(255,0,0);
-        ui.triangle(x1,y1,x2,y2,x3,y3);
+        ui.triangle(user_x1,user_y1,user_x2,user_y2,user_x3,user_y3);
 
     }
 
-    public void lane_down()
-    {
-        y1 = y1 + 300;
-        y2 = y2 + 300;
-        y3 = y3 + 300;
-    }
-
-    public void lane_up()
-    {
-        y1 = y1 - 300;
-        y2 = y2 - 300;
-        y3 = y3 - 300;
-    }
 
     public void update()
     {
         //if in top lane
-        if(y1 == 50 && ui.checkKey('s'))
+        if(user_y1 == 50 && ui.checkKey('s'))
         {
             //mid lane co ordinates
-            y1= 350;
-            y2= 550;
-            y3= 450;
+            user_y1= 350;
+            user_y2= 550;
+            user_y3= 450;
             try {
                 Thread.sleep(time_wait);                 //1000 milliseconds is one second.
             } catch(InterruptedException ex) {
@@ -58,12 +45,12 @@ public class User
             }
         }
         //if in top lane and going up
-        else if(y1 == 50 && ui.checkKey('w'))
+        else if(user_y1 == 50 && ui.checkKey('w'))
         {
             //bot lane co ordinates
-            y1= 650;
-            y2= 850;
-            y3= 750;
+            user_y1= 650;
+            user_y2= 850;
+            user_y3= 750;
             try {
                 Thread.sleep(time_wait);                 //1000 milliseconds is one second.
             } catch(InterruptedException ex) {
@@ -72,11 +59,11 @@ public class User
         }
 
         //if in mid lane
-        else if(y1 == 350 && ui.checkKey('s'))
+        else if(user_y1 == 350 && ui.checkKey('s'))
         {
-            y1= 650;
-            y2= 850;
-            y3= 750;
+            user_y1= 650;
+            user_y2= 850;
+            user_y3= 750;
             try {
                 Thread.sleep(time_wait);                 //1000 milliseconds is one second.
             } catch(InterruptedException ex) {
@@ -84,12 +71,12 @@ public class User
             }
         }
         //if in top lane and going up
-        else if(y1 == 350 && ui.checkKey('w'))
+        else if(user_y1 == 350 && ui.checkKey('w'))
         {
             //top lane co ordinates
-            y1= 50;
-            y2= 250;
-            y3= 150;
+            user_y1= 50;
+            user_y2= 250;
+            user_y3= 150;
             try {
                 Thread.sleep(time_wait);                 //1000 milliseconds is one second.
             } catch(InterruptedException ex) {
@@ -98,12 +85,12 @@ public class User
         }
 
         //if in bot lane
-        else if(y1 == 650 && ui.checkKey('s'))
+        else if(user_y1 == 650 && ui.checkKey('s'))
         {
             //mid lane co ordinates
-            y1= 50;
-            y2= 250;
-            y3= 150;
+            user_y1= 50;
+            user_y2= 250;
+            user_y3= 150;
             try {
                 Thread.sleep(time_wait);                 //1000 milliseconds is one second.
             } catch(InterruptedException ex) {
@@ -111,12 +98,12 @@ public class User
             }
         }
         //if in top lane and going up
-        else if(y1 == 650 && ui.checkKey('w'))
+        else if(user_y1 == 650 && ui.checkKey('w'))
         {
             //bot lane co ordinates
-            y1= 350;
-            y2= 550;
-            y3= 450;
+            user_y1= 350;
+            user_y2= 550;
+            user_y3= 450;
             try {
                 Thread.sleep(time_wait);                 //1000 milliseconds is one second.
             } catch(InterruptedException ex) {
