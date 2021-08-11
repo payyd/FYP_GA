@@ -11,4 +11,5 @@ Once the algorithm was created, it was found that without the use of neural netw
 
 # Gameplay
 
+![Sketch](p7.png)
 
