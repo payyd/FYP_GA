@@ -1,6 +1,8 @@
 # FYP_GA
 Final year project carried out in 2020-2021 for my bachelor's in computer science in Technological University Dublin.
 
+Link to play game and run genetic algorithm: https://editor.p5js.org/payyd/sketches/3v2-amALY
+
 # Abstract
 
 This project applies real-life genetic properties to programming through the use of genetic algorithms to demonstrate an available learning process for artificial intelligences. The genetic algorithm will be applied to a self-programmed video game, where the games score increases incrementally as the game runs.
