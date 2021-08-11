@@ -26,4 +26,4 @@ The genetic algorithm attempts to complete the game in the same way as the user,
 
 
 
-![Sketch](GA.png)
+![Sketch](ga.png)
