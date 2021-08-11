@@ -13,5 +13,13 @@ Once the algorithm was created, it was found that without the use of neural netw
 
 # Gameplay
 
+Gameplay operates as such: The user controls a red triangle which can move upwards or downards b y pressing w or s respectively. The objective of the game is to avoid incoming obstacles so that the score increases. A screenshot of the gameplay can be seen below.
+
 ![Sketch](gameplay.png)
 
+
+# Genetic Algorithm
+
+The genetic algorithm attempts to complete the game in the same way as the user, by avoiding the obsatcles to achieve a higher score. A higher score correlates to a higher fitness value meaning that that specific bot is more likely to reproduce into the next generation. The genetic algorithm successfully visualises multiple insatnces of bots at once so that the learning of the algorithm can be better visualised. A screenshot of the genetic algorithm running can be seen below. 
+
+![Sketch](GA.png)
